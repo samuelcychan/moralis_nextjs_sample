@@ -1,0 +1,13 @@
+{
+    "name": "wallet_auth_nextjs",
+    "version": "1.0.0",
+    "description": "moralis authentication",
+    "author": "Samuel Chan <sameulcychan@gmail.com>",
+    "main": "index.js",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    }
+  }
