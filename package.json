@@ -5,9 +5,19 @@
     "author": "Samuel Chan <sameulcychan@gmail.com>",
     "main": "index.js",
     "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start",
-      "lint": "next lint"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "ethers": "^5.7.0",
+        "moralis": "^2.4.0",
+        "next": "^12.3.0",
+        "next-auth": "^4.10.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "wagmi": "^0.6.5"
     }
-  }
+}

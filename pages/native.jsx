@@ -10,17 +10,17 @@ function Native({ nativeBalance, address }) {
 }
 
 export async function getServerSideProps(context) {
-    await Moralis.start({ apiKey: process.env.MORALIS_API_KEY });
+    await Moralis.start({ apiKey: process.env.MORALIS_API_KEY })
 
     const address = process.env.ETH_ADDRESS
 
     const nativeBalance = await Moralis.EvmApi.balance.getNativeBalance({
         address,
-    });
+    })
 
     return {
         props: { address, nativeBalance: nativeBalance.result.balance.ether },
-    };
+    }
 }
 
 export default Native;
